@@ -36,7 +36,7 @@ const Login = () => {
         return tokenLocalStorage && tokenLocalStorage.length === 64;
     };
 
-    const redirectToChoiceBoard = () => window.location.replace('/choice-board');
+    const redirectToChoiceBoard = () => window.location.replace('/react-trello-report/choice-board');
 
     useEffect(() => {
         if (isAuthorized()) {

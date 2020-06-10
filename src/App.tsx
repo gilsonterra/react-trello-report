@@ -2,7 +2,7 @@ import React from 'react';
 import {
     BrowserRouter,
     Switch,
-    Route    
+    Route
 } from "react-router-dom";
 import ChoiceBoard from './pages/ChoiceBoard';
 import Board from './pages/Board';
@@ -14,7 +14,7 @@ const NotFound = () => <Container><Empty title="Not Found" /></Container>;
 
 const App = () => {
     return <>
-        <BrowserRouter>
+        <BrowserRouter basename="/react-trello-report"> 
             <Switch>
                 <Route exact={true} path="/board/:boardId">
                     <Board />
