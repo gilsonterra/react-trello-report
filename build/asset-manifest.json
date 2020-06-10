@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/gilsonterra/react-trello-reportstatic/js/main.e1d78a73.chunk.js",
-    "main.js.map": "/gilsonterra/react-trello-reportstatic/js/main.e1d78a73.chunk.js.map",
-    "runtime-main.js": "/gilsonterra/react-trello-reportstatic/js/runtime-main.57f3b4ce.js",
-    "runtime-main.js.map": "/gilsonterra/react-trello-reportstatic/js/runtime-main.57f3b4ce.js.map",
-    "static/css/2.788bf961.chunk.css": "/gilsonterra/react-trello-reportstatic/css/2.788bf961.chunk.css",
-    "static/js/2.e4d55ea3.chunk.js": "/gilsonterra/react-trello-reportstatic/js/2.e4d55ea3.chunk.js",
-    "static/js/2.e4d55ea3.chunk.js.map": "/gilsonterra/react-trello-reportstatic/js/2.e4d55ea3.chunk.js.map",
-    "index.html": "/gilsonterra/react-trello-reportindex.html",
-    "precache-manifest.fa7455ca3f401fec7eee17083080b021.js": "/gilsonterra/react-trello-reportprecache-manifest.fa7455ca3f401fec7eee17083080b021.js",
-    "service-worker.js": "/gilsonterra/react-trello-reportservice-worker.js",
-    "static/css/2.788bf961.chunk.css.map": "/gilsonterra/react-trello-reportstatic/css/2.788bf961.chunk.css.map",
-    "static/js/2.e4d55ea3.chunk.js.LICENSE.txt": "/gilsonterra/react-trello-reportstatic/js/2.e4d55ea3.chunk.js.LICENSE.txt"
+    "main.js": "/react-trello-report/static/js/main.fe1b627b.chunk.js",
+    "main.js.map": "/react-trello-report/static/js/main.fe1b627b.chunk.js.map",
+    "runtime-main.js": "/react-trello-report/static/js/runtime-main.618e97ba.js",
+    "runtime-main.js.map": "/react-trello-report/static/js/runtime-main.618e97ba.js.map",
+    "static/css/2.788bf961.chunk.css": "/react-trello-report/static/css/2.788bf961.chunk.css",
+    "static/js/2.b161aff1.chunk.js": "/react-trello-report/static/js/2.b161aff1.chunk.js",
+    "static/js/2.b161aff1.chunk.js.map": "/react-trello-report/static/js/2.b161aff1.chunk.js.map",
+    "index.html": "/react-trello-report/index.html",
+    "precache-manifest.632ec2dfeb9d4b9a7a5538d539c1972d.js": "/react-trello-report/precache-manifest.632ec2dfeb9d4b9a7a5538d539c1972d.js",
+    "service-worker.js": "/react-trello-report/service-worker.js",
+    "static/css/2.788bf961.chunk.css.map": "/react-trello-report/static/css/2.788bf961.chunk.css.map",
+    "static/js/2.b161aff1.chunk.js.LICENSE.txt": "/react-trello-report/static/js/2.b161aff1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.57f3b4ce.js",
+    "static/js/runtime-main.618e97ba.js",
     "static/css/2.788bf961.chunk.css",
-    "static/js/2.e4d55ea3.chunk.js",
-    "static/js/main.e1d78a73.chunk.js"
+    "static/js/2.b161aff1.chunk.js",
+    "static/js/main.fe1b627b.chunk.js"
   ]
 }
