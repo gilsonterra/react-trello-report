@@ -1,5 +1,5 @@
 {
-  "name": "react-trello",
+  "name": "react-trello-report",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:style": "tailwind build src/styles/main.css -o src/build.css",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -32,6 +31,13 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/oauth": "^0.9.1",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/styled-components": "^5.1.0",
     "autoprefixer": "^9.8.0",
     "gh-pages": "^3.0.0",
     "postcss-color-function": "^4.1.0",
@@ -44,26 +50,29 @@
     "postcss-simple-vars": "^5.0.2"
   },
   "dependencies": {
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/oauth": "^0.9.1",
-    "@types/react": "^16.9.36",
-    "@types/react-dom": "^16.9.0",
-    "@types/react-router-dom": "^5.1.5",
-    "@types/styled-components": "^5.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "recharts": "^1.8.5",
-    "source-map-explorer": "^2.4.2",
     "spectre.css": "^0.5.8",
     "styled-components": "^5.1.1",
-    "tailwindcss": "^1.4.6",
     "typescript": "~3.7.2"
   },
   "resolutions": {
     "styled-components": "^5"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "public/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilsonterra/react-trello-report.git"
+  },
+  "author": "Gilson Terra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilsonterra/react-trello-report/issues"
+  },
+  "homepage": "https://github.com/gilsonterra/react-trello-report#readme"
 }
