@@ -1,0 +1,69 @@
+{
+  "name": "react-trello",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:style": "tailwind build src/styles/main.css -o src/build.css",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^9.8.0",
+    "gh-pages": "^3.0.0",
+    "postcss-color-function": "^4.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-initial": "^3.0.2",
+    "postcss-loader": "^3.0.0",
+    "postcss-math": "0.0.10",
+    "postcss-mixins": "^6.2.3",
+    "postcss-nested": "^4.2.1",
+    "postcss-simple-vars": "^5.0.2"
+  },
+  "dependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/oauth": "^0.9.1",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/styled-components": "^5.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "recharts": "^1.8.5",
+    "source-map-explorer": "^2.4.2",
+    "spectre.css": "^0.5.8",
+    "styled-components": "^5.1.1",
+    "tailwindcss": "^1.4.6",
+    "typescript": "~3.7.2"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  }
+}
