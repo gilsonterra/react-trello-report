@@ -10,7 +10,7 @@
     "build:style": "tailwind build src/styles/main.css -o src/build.css",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
