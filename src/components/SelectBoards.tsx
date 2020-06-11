@@ -8,9 +8,14 @@ interface SelectBoardProps {
 const SelectBoards = (props: SelectBoardProps) => {
     const { onSelect } = props;
     const [boards, setBoards] = useState<BoardType[]>([]);
+    const [loading, setLoading] = useState(false);
 
     const handleFetchBoard = () => {
-        fetchBoards().then((boards) => setBoards(boards));
+        setLoading(true);
+        fetchBoards().then((boards) => {
+            setBoards(boards);
+            setLoading(false);
+        });
     };
 
     const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
@@ -24,8 +29,8 @@ const SelectBoards = (props: SelectBoardProps) => {
 
     return <div className="form-group">
         <label className="form-label">Choice the board</label>
-        <select className="form-select" onChange={(e) => handleChange(e)}>
-            <option value=""></option>
+        <select className="form-select" disabled={loading} onChange={(e) => handleChange(e)}>
+            <option value="">{loading ? 'Loading...' : ''}</option>
             {boards.map((board) => <option key={board.id} value={board.id}>{board.name}</option>)}
         </select>
     </div>
