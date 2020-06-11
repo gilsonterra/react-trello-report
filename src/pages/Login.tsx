@@ -36,7 +36,7 @@ const Login = () => {
         return tokenLocalStorage && tokenLocalStorage.length === 64;
     };
 
-    const redirectToChoiceBoard = () => window.location.replace(`${process.env.PUBLIC_URL}/choice-board`);
+    const redirectToChoiceBoard = () => window.location.replace(`${process.env.PUBLIC_URL}#choice-board`);
 
     useEffect(() => {
         if (isAuthorized()) {

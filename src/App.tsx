@@ -1,6 +1,7 @@
 import React from 'react';
 import {
     BrowserRouter,
+    HashRouter,
     Switch,
     Route
 } from "react-router-dom";
@@ -14,7 +15,7 @@ const NotFound = () => <Container><Empty title="Not Found" /></Container>;
 
 const App = () => {
     return <>
-        <BrowserRouter basename={process.env.PUBLIC_URL}> 
+        <HashRouter basename={process.env.PUBLIC_URL}> 
             <Switch>
                 <Route exact={true} path="/board/:boardId">
                     <Board />
@@ -27,7 +28,7 @@ const App = () => {
                 </Route>
                 <Route exact={true} path='*' component={NotFound} />
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     </>
 }
 
