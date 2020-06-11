@@ -14,7 +14,7 @@ const NotFound = () => <Container><Empty title="Not Found" /></Container>;
 
 const App = () => {
     return <>
-        <BrowserRouter basename="/react-trello-report"> 
+        <BrowserRouter basename={process.env.PUBLIC_URL}> 
             <Switch>
                 <Route exact={true} path="/board/:boardId">
                     <Board />

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b8ddebacdc5938b98a1bd6eec314284",
+    "revision": "fa2b2710e7bfd7cb2efd92c5c21aaa58",
     "url": "/react-trello-report/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-trello-report/static/js/2.b161aff1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0abc7d1458f9e0ec6803",
-    "url": "/react-trello-report/static/js/main.20d24420.chunk.js"
+    "revision": "f160c4ce162bbd099887",
+    "url": "/react-trello-report/static/js/main.3580f36c.chunk.js"
   },
   {
     "revision": "58fd0c9d36142efb6eb7",
