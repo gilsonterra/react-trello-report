@@ -24,25 +24,23 @@ export type BoardType = {
     id: string,
     url: string,
     desc: string,
-    shortUrl: string    
+    shortUrl: string
 }
 
-export const fetchBoards = async () => {
-    const response = await fetch(`${uri}1/members/me/boards?fields=name,id,url,list&key=${appKey}&token=${token}`);
-    return await response.json();
+const redirectToLogin = () => window.location.replace(`${process.env.PUBLIC_URL}`);
+
+const requestGet = async (url: string) => {
+    try {
+        const response = await fetch(url);
+        return await response.json();
+    }
+    catch (err) {
+        console.log(err);
+        redirectToLogin();
+    }
 }
 
-export const fetchLists = async (boardId: string) => {
-    const response = await fetch(`${uri}1/boards/${boardId}/lists?fields=name,id&key=${appKey}&token=${token}`);
-    return await response.json();
-}
-
-export const fetchCards = async (listId: string) => {
-    const response = await fetch(`${uri}1/lists/${listId}/cards?key=${appKey}&token=${token}`);
-    return await response.json();
-}
-
-export const fetchBoard = async (boardId: string) => {
-    const response = await fetch(`${uri}1/boards/${boardId}?key=${appKey}&token=${token}`);
-    return await response.json();
-}
+export const fetchBoards = async () => requestGet(`${uri}1/members/me/boards?fields=name,id,url,list&key=${appKey}&token=${token}`);
+export const fetchLists = async (boardId: string) => requestGet(`${uri}1/boards/${boardId}/lists?fields=name,id&key=${appKey}&token=${token}`);
+export const fetchCards = async (listId: string) => requestGet(`${uri}1/lists/${listId}/cards?key=${appKey}&token=${token}`);
+export const fetchBoard = async (boardId: string) => requestGet(`${uri}1/boards/${boardId}?key=${appKey}&token=${token}`);

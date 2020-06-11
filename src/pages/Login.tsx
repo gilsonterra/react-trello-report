@@ -38,12 +38,13 @@ const Login = () => {
 
     const redirectToChoiceBoard = () => window.location.replace(`${process.env.PUBLIC_URL}#choice-board`);
 
-    useEffect(() => {
+    useEffect(() => {        
         if (isAuthorized()) {
             redirectToChoiceBoard();
         }
         else {
             const token = regexToken.exec(window.location.hash) || '';
+            
             if (token && token[1]) {
                 localStorage.setItem('token', token[1]);
                 redirectToChoiceBoard();

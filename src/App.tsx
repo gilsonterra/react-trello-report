@@ -22,7 +22,7 @@ const App = () => {
                 <Route exact={true} path="/choice-board">
                     <ChoiceBoard />
                 </Route>
-                <Route exact={true} path="/">
+                <Route exact={true} path="/*">
                     <Login />
                 </Route>
                 <Route exact={true} path='*' component={NotFound} />
